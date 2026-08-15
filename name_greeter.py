@@ -5,6 +5,6 @@ second = names[-1]
 if  len(names) >= 2:
     print("Good morning:", first)
 if len(names) == 1:
-    print("Please write your full name: ")
+    print = str(input("Please write your full name: "))
     
      
