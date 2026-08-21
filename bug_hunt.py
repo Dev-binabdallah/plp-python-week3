@@ -1,9 +1,13 @@
-#BUG: The print statement missed closing qoute, so added one.
 print("Welcome to the Bug Hunt!")
+
 name = input("What is your name? ")
-print("Nice to meet you, nmae")
+
+# BUG: The variable name was misspelled as "nmae" instead of "name".
+# Solution: Changed "nmae" to "name" so the user's actual name is displayed.
+print("Nice to meet you,", name)
+
 age = input("How old are you? ")
-#BUG: The print statement cancatenated a string (age) with integer (1).
-#BUG: Used (+) to cancatenate a qouted string with integer
-      #solution: converted age to integer and used coma to seperate the age from the statement "Next year you will be" and the (+) sign.
+
+# BUG: The program tried to add an integer to the string returned by input().
+# Solution: Converted age to an integer before adding 1.
 print("Next year you will be", int(age) + 1)
